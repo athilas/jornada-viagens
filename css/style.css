@@ -1,14 +1,28 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);    
+    font-style: normal;
+    font-display: swap; /* comando para o browser utilizar fonte do sistema ate ser feito o download da font*/
+}
+
 :root{
     --background-primary-color: #ffffff;
     --background-secondary-color: #f5f5f5;
     --background-tertiary-color: #000000;
 
-    --button-primary-color: #8f0101;
-    --button-secondary-color: #b81515;
+    --primary-color: #8f0101;
+    --secondary-color: #b81515;
 
     --text-primary-color: #222222;
     --text-secondary-color: #ffffff;
+
+    --titles--weight: 700;
+    --text-weight: 400;
+    --menu-text-weight: 500;
+
+
 }
+
 /*RESET */
 body, img, h1, p, fieldset, legend, label, input, select, textarea, button {
     margin: 0;
@@ -17,5 +31,9 @@ body, img, h1, p, fieldset, legend, label, input, select, textarea, button {
 }
 
 h1{
-    color: var(--text-primary-color);
+    font-family: "Montserrat";
+    color: var(--primary-color);
+    font-weight: var(--title-weight);
+
+
 }
